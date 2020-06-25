@@ -7,8 +7,11 @@ const breatheTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
 
 breathAnimation();
+playSong();
 
-audio.play();
+function playSong() {
+  audio.play();
+}
 
 function breathAnimation() {
   text.innerText = '숨을 들이쉬세요!';
@@ -25,3 +28,4 @@ function breathAnimation() {
 }
 
 setInterval(breathAnimation, totalTime);
+setInterval(playSong, 10);
