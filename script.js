@@ -18,7 +18,7 @@ function breathAnimation() {
   container.className = 'container grow';
 
   setTimeout(() => {
-    text.innerText = '숨을 참을세요';
+    text.innerText = '숨을 참으세요';
 
     setTimeout(() => {
       text.innerText = '숨을 내쉬세요!';
@@ -28,4 +28,4 @@ function breathAnimation() {
 }
 
 setInterval(breathAnimation, totalTime);
-setInterval(playSong, 10);
+setInterval(playSong, 0);
